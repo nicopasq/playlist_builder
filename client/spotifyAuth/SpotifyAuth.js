@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import { useDispatch } from 'react-redux'
 
 const CLIENT_ID = "88d48ccefc484cc189bcb5c81300d000";
 const CLIENT_SECRET = "11d0f0c461c941cf80782a60df38b1a3";
 
 
 function SpotifyAuth(){
-    const dispatch = useDispatch()
 
     useEffect(() => {
         var authParameters = {
@@ -19,7 +17,7 @@ function SpotifyAuth(){
 
         fetch('https://accounts.spotify.com/api/token', authParameters)
         .then(result => result.json())
-        .then(data => dispatch({type:'accessToken/setAccessToken', payload:data.access_token}))
+        .then(data => console.log(data))
     }, [])
 
 };
