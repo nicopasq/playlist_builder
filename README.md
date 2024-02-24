@@ -23,3 +23,12 @@ Things you may want to cover:
 
 * ...
 # playlist_builder
+
+## Technologies
+- Ruby 2.6.3
+- Rails 5.2.4
+- NextJS with Redux for frontend
+- Material UI for styling
+- Css
+- PostgreSQL
+- ActiveRecord
