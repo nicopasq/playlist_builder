@@ -1,9 +1,9 @@
+"use client"
+import SpotifyAuth from "../../spotifyAuth/SpotifyAuth";
 import NavBar from "./NavBar";
-const CLIENT_ID = "";
-const CLIENT_SECRET = "";
-
 
 export default function Home() {
+  SpotifyAuth()
   return (
    <div>
     <NavBar/>
